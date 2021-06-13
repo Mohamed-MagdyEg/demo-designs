@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<style>
+
+.container{
+    background-color: darkslategrey;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+
+}
+.card{
+    width: 23%;
+    height: 400px;
+    background: linear-gradient(to right top, #1e407e 40% , #1e507e 40%,#1e507e 43%,#1e407e 43%,#1e507e 46%,#1e407e 46%,#1e507e 49%,#1e407e 43%);
+    border-radius: 3px;
+    z-index: 5;
+    position: relative;
+    left: 10%;
+    top: 10%;
+    box-shadow: -1px 1px 8px 3px #f3eded;
+    
+
+   
+}
+.card::after{
+    content: "";
+    width: 79%;
+    height: 75%;
+    clip-path: circle(112px at 100% -24%);
+    top: 0px;
+    left: 66px;
+    background: linear-gradient(321deg, rgba(44,145,171,1) 0%, rgba(20,98,119,1) 100%);
+    position: absolute;
+    z-index: 2;
+
+}
+
+img{
+   width:  70%;
+   height: 100px;
+   position: absolute;
+    transform: rotate(336deg);
+    left: 29%;
+    top: 20px;
+    z-index: 3;
+
+}
+.imgbx{
+    position:absolute;
+    top: 52%;
+    margin-left: 103px;
+}
+.imgbx div:nth-child(1){
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+.imgbx div:nth-child(2){
+
+    color: white;
+    font-size: 18px;
+    margin-top: 41px;
+    text-transform: capitalize;
+    margin-left: -3px;
+    display: inline-block;
+}
+.size span{
+    font-size: 15px;
+    background-color: #292a2e;
+    padding: 5px;
+    border-radius: 3px;
+}.size span:hover{
+    background: linear-gradient(300deg, rgba(42,150,255,1) 0%, rgba(16,45,168,0.1516981792717087) 100%);
+    cursor: pointer;
+    }
+.color{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    margin-left: -3px;
+    display: block;
+    height: 57px;
+    
+}
+
+.color span{
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.color span:nth-child(1){
+    background-color:#3698ac;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -6px 1px;
+
+
+}
+.color span:nth-child(2){
+    background-color: #7e1515;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -6px 1px;
+
+
+}
+.color span:nth-child(3){
+    background-color: #000000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -6px 1px;
+
+
+}
+button{
+
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    position: absolute;
+    border-color: #4f75b9;
+    top: 146px;
+    box-shadow: 1px 1px 8px 3px black;
+    right: 3px;
+    background: linear-gradient(321deg, rgba(126,133,139,1) 0%, rgba(236,129,58,0.04805672268907568) 100%);
+    color: white;
+    font-size: 19px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.container2{
+    background-color: darkslategrey;
+    width: 100%;
+    height:400px;
+    position: relative;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+
+}
+.card2{
+    width: 23%;
+    height: 400px;
+    background: linear-gradient(36deg, #1e407e 40% , #1e507e 40%,#1e507e 43%,#1e407e 43%,#1e507e 46%,#1e407e 46%,#1e507e 49%,#1e407e 43%);
+    border-radius: 3px;
+    position: relative;
+    left: 62%;
+    top: -89%;
+    z-index: 45;
+    box-shadow: -1px 1px 8px 3px #f3eded;
+}
+.card2::after{
+    content: "";
+    width: 50%;
+    height: 170px;
+    background: #50585f00;
+    position: absolute;
+    border-radius: 5%;
+    top: 343px;
+    right: 266px;
+    backdrop-filter: blur(1rem);
+    z-index: 1;
+}
+
+
+.card2:hover .imgbx2{
+
+top: 50%;
+visibility: visible;
+ transition: ease-out 0.2s;
+
+}
+
+img{
+   width:  70%;
+   height: 100px;
+   position: absolute;
+    transform: rotate(336deg);
+    left: 29%;
+    top: 20px;
+    transition: ease-out 1s ,linear transform 1.5s;
+
+}
+.card2:hover img{
+    left: 10%;
+    transform: rotate(10deg);
+    transition: ease-out 1s, linear transform 1.5s;
+
+}
+.imgbx2{
+    position:absolute;
+    top: 60%;
+    margin-left: 103px;
+    transition: ease-in-out 0.2s;
+    visibility: hidden;
+}
+.card2:hover .bu2{
+
+    visibility: visible;
+    transition: 0.1s;
+    
+}
+
+.imgbx2 div:nth-child(1){
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+
+
+}
+.imgbx2 div:nth-child(2){
+
+    color: white;
+    font-size: 18px;
+    margin-top: 41px;
+    text-transform: capitalize;
+    margin-left: -3px;
+    display: inline-block;
+    
+    transition: ease-out 0.1s;
+}
+.size2 span{
+    font-size: 15px;
+    background-color: #292a2e;
+    padding: 5px;
+    border-radius: 3px;
+}.size2 span:hover{
+    background: linear-gradient(300deg, rgba(42,150,255,1) 0%, rgba(16,45,168,0.1516981792717087) 100%);
+    cursor: pointer;
+    }
+.color2{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    margin-left: -3px;
+    display: block;
+    height: 57px;
+    
+}
+
+.color2 span{
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.color2 span:nth-child(1){
+    background-color:#3698ac;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -6px 1px;
+
+
+}
+.color2 span:nth-child(2){
+    background-color: #7e1515;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -6px 1px;
+
+
+}
+.color2 span:nth-child(3){
+    background-color: #000000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -6px 1px;
+
+
+}
+.but2{
+
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    position: absolute;
+    border-color: #4f75b9;
+    top: 146px;
+    box-shadow: 1px 1px 8px 3px black;
+    right: 3px;
+    background: linear-gradient(321deg, rgba(126,133,139,1) 0%, rgba(236,129,58,0.04805672268907568) 100%);
+    transition: 0.1s;
+    font-size: 20px;
+    color: white;
+    font-size: 19px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.circle{
+    width: 13%;
+    height: 175px;
+    background: #e0e1e124;
+    backdrop-filter: blur(2rem);
+    position: absolute;
+    top: -37px;
+    clip-path: circle(52px at 116px 97px);
+}
+</style>
+
+</head>
+
+<body>
+    
+        <div class="container">
+            <div class="card">
+                <img src="images\adidas.png" alt="">
+                <div class="imgbx">
+                   
+                    <div>adidas shoe</div>
+                    <div class="size">size:
+                    <span>40</span>
+                    <span>41</span>
+                    <span>42</span>
+                </div>
+                    <div class="color">color:
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button class="bu1">buy now</button>
+                </div>
+            </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div class="container2">
+        <div class="card2">
+            <img src="images\adidas.png" alt="">
+            <div class="imgbx2">
+               
+                <div>adidas shoe</div>
+                <div class="size2">size:
+                <span>40</span>
+                <span>41</span>
+                <span>42</span>
+            </div>
+                <div class="color2">color:
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <button class="but2">buy now</button>
+            
+            </div>
+           
+        </div>
+        <div class="circle"></div>
+    <div>
+
+    </div>
+    <div>
+        
+    </div>
+   
+</div>
+</body>
+</html>

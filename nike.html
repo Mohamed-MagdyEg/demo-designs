@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+    </title>
+    <style>
+        .container{
+            background-color: #ffede1;
+            width: 100%;
+            height: 600px;
+            position: relative;
+          
+            
+
+        }
+        .card{
+            width:300px;
+            height: 470px;
+            background-color: #afcbff;
+            position: relative;
+            top: 10%;
+            left: 10%;
+            border-radius: 10px;
+            background: linear-gradient(347deg, rgba(175,203,255,1) 0%, rgba(14,28,54,1) 100%);
+            box-shadow: 0px 1px 8px 5px black;
+            overflow: hidden;
+        }
+        .card::after{
+            content: "";
+            position: absolute;
+            top: -42px;
+            width: 56%;
+            height: 36%;
+            background: #fafdfe17;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            transform: rotate(289deg);
+            right: -47px;
+            z-index: 1;
+}
+        .card::before{
+            content: "";
+        position: absolute;
+        width: 59%;
+        height: 29%;
+        background: #fafdfe17;
+        top: 87px;
+        z-index: 1;
+        left: -70px;
+        transform: rotate(40deg);
+}
+   
+.name::before{
+    content: "Nike";
+    position: absolute;
+    color: #0000001f;
+    top: 229px;
+    left: -30px;
+    font-size: 203px;
+    z-index: 1;
+    font-family: fantasy;
+    
+          
+}
+        
+        .first{
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            left: 149px;
+             top: 16px;
+             z-index: 2;
+        }
+        .second{
+            position: absolute;
+            width: 131px;
+            height: 131px;
+            z-index: 2;
+            top: 140px;
+        } 
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+                <img src="images\nike2.png" alt="" class="first">
+                <img src="images\nike3.png" alt="" class="second">
+                
+                <div class="name"></div>
+            
+        </div>
+      
+
+        </div>
+    </div>
+</body>
+
+</html>
